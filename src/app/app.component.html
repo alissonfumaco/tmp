@@ -1,0 +1,15 @@
+<h1>The value is {{ selected.value }}</h1>
+
+<section class="w-100 flex justify-center">
+  <app-select [formControl]="selected">
+    <ng-container ngProjectAs="defaultOption">Options</ng-container>
+    <ng-container ngProjectAs="options">
+        <app-option value="0">
+          <a class="hover:bg-gray-100 hover:text-red-900 text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Edit</a>
+        </app-option>
+        <app-option value="1">
+          <a class="hover:bg-gray-100 hover:text-gray-900 text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Duplicate</a>
+        </app-option>
+    </ng-container>
+  </app-select>
+</section>
